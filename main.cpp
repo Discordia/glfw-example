@@ -1,4 +1,4 @@
-#include <GL/glew.h>
+#include "glad.h"
 #include <GLFW/glfw3.h>
 #include "linmath.h"
 #include <cstdlib>
@@ -86,14 +86,7 @@ int main(void) {
     glfwSetKeyCallback(window, key_callback);
     glfwMakeContextCurrent(window);
 
-    // Initalize GLEW
-    glewExperimental = GL_TRUE;
-    GLenum err = glewInit();
-    if (GLEW_OK != err)
-    {
-        glfwTerminate();
-        exit(EXIT_FAILURE);
-    }
+    gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
 
     glfwSwapInterval(1);
 

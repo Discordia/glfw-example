@@ -3,7 +3,7 @@ project(glfw_example)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp glad.c)
 
 
 if(APPLE)
