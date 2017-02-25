@@ -1,0 +1,1 @@
+Simple glfw3 example that I'm running omn MacOs Sierra to find a problem. It draw fion in windows mode but draw nothing in full screen.
